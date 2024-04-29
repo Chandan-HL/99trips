@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #3d5cb8;
+  --primary-color-dark: #334c99;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --extra-light: #f1f5f9;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333 ;
+  width: 100%;
+  padding: 2px 100px;
+  text-align: center;
+}
+
+.nav-container .nav-start{
+  text-align: center;
+}
+
+.nav-container .nav-start a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.nav-container .nav-start a img{
+  width: 80px;
+}
+
+.nav-container .nav-middle a{
+  margin: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.nav-container .nav-end button{
+  padding: 10px 25px;
+  background: #f29a0c;
+  font-weight: 600;
+  border: none;
+}
+
+
+
+/* HOME */
+
+
+.home-container{
+    width: 100%;
+}
+
+.home-container.home-video video{
+  position: absolute;
+}
+
+.home-container .home-video video{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+/* FLIGHT_BOOKINGD */
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+    position: relative;
+    /* top: -350px; */
+  }
+
+.booking__container {
+    border-radius: 2rem;
+    bottom: 400px;
+    /* border: 1px solid var(--extra-light); */
+    /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .booking__nav {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--extra-light);
+    border-radius: 5px;
+  }
+  
+  .booking__nav span {
+    flex: 1;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .booking__nav span:nth-child(2) {
+    color: black;
+    /* border: 0.5px solid black; */
+    background: linear-gradient(to bottom, #ffa500 , #fff);
+  }
+  
+  .booking__container form {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 1rem;
+    /* position: relative;
+    bottom: 20px; */
+  }
+  
+  .booking__container .input__content {
+    width: 100%;
+  }
+
+  .booking__container form{
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 25px;
+  }
+  
+  .booking__container .form__group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .booking__container .form__group span {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    background: linear-gradient(to bottom, #ffa500 , #fff);
+    border-radius: 1rem;
+  }
+  
+  .booking__container .input__group {
+    width: 100%;
+    position: relative;
+  }
+  
+  .booking__container label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  
+  .booking__container input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--text-dark);
+  }
+  
+  .booking__container input:focus ~ label {
+    font-size: 0.8rem;
+    top: 0;
+  }
+  
+  .booking__container .form__group p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+  }
+  
+  .booking__container .btn {
+    padding: 0px 15px;
+    font-size: 1.5rem;
+    border-radius: 25%;
+    border: none;
+    background: linear-gradient(to bottom, #ffa500 , #fff);
+  }
+
+
+  .comming-soon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 400px;
+}
+
+.comming-soon h2{
+    padding: 10px 25px;
+    border: 2px solid #f9ab30;
+    background-color: black;
+    color: white;
+}
+
+span{
+    color: #f29a0c;
+    /* padding: 10px 20px; */
+}
+
+.comming-soon img{
+    width: 400px;
+}
