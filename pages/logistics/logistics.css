@@ -47,6 +47,7 @@ span{
     width: 100%;
     padding: 5px 100px;
     text-align: center;
+    z-index: 10001;
 }
 
 .nav-container .nav-start{
@@ -78,6 +79,16 @@ span{
     border: none;
 }
 
+#menu-bar{
+    color: #fff;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+ }
+
 
 
 
@@ -89,8 +100,62 @@ span{
     }
 }
 
+@media (max-width:991px)
+ {
+    .nav-container{
+        padding: 2rem;
+    }
+
+    /* section{
+        padding: 2rem;
+    } */
+ }
+
+ @media (max-width:768px)
+ {
+    #menu-bar{
+        display: initial;
+        
+    }
+
+    .nav-container{
+        background: #333;
+    }
+
+    .nav-container .nav-start img{
+        display: none;
+    }
+
+    .nav-container .nav-middle{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255,255,255,.2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .nav-container .nav-middle.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .nav-container .nav-middle a{
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+ }
+
 @media (max-width:450px){
     html{
         font-size: 50%;
+    }
+
+    .heading span{
+        font-size: 2.5rem;
     }
 }
